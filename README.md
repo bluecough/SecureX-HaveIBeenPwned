@@ -37,6 +37,7 @@ Default output format [None]:
 [![asciicast](https://asciinema.org/a/VfdtmieAW4UkWTQ2dPcHk31KS.svg)](https://asciinema.org/a/VfdtmieAW4UkWTQ2dPcHk31KS)
 
 # Cloning the SecureX HaveYouBeenPwned Repo
+Clone the repo then going into that directory and creating a virtual environment for your python packages that you need for this repo.
 ```
 git clone https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned.git
 cd tr-05-serverless-have-i-been-pwned.git
