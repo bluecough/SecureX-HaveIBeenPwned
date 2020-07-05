@@ -36,7 +36,7 @@ Default output format [None]:
 # Click to play the recording
 [![asciicast](https://asciinema.org/a/VfdtmieAW4UkWTQ2dPcHk31KS.svg)](https://asciinema.org/a/VfdtmieAW4UkWTQ2dPcHk31KS)
 
-# Cloning the HaveYouBeenPwned Repo
+# Cloning the SecureX HaveYouBeenPwned Repo
 <pre><code>
 $ git clone https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned.git
 
