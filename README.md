@@ -93,3 +93,5 @@ $ python3 jwt-generator.py pwned
 
 - The SECRET_KEY goes into the AWS console Lambda environment variable while the JWT is applied in CTR or SecureX
 </code></pre>
+
+![Image Lamdba Enviroment Variable](https://github.com/bluecough/SecureX-HaveIBeenPwned/blob/master/img/SECRET_KEY.png)
