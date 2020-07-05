@@ -23,6 +23,7 @@ Configure AWS CLI on Ubuntu
 # Login in to your AWS console and under IAM retrieve your AWS keys
 
 # Now in your UBUNTU VM
+<pre><code>
 $ aws configure
 AWS Access Key ID [*******************U]: 
 AWS Secret Access Key [*******************h]: 
