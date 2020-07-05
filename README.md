@@ -44,6 +44,7 @@ virtualenv venv
 pip install -U -r requirements.txt
 source venv/bin/activate (To leave venv do a $ deactivate)
 ```
+Now run zappa by initing it.
 ```
 mv zappa_settings.json zappa_settings.json.old
 zappa init
