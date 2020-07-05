@@ -39,7 +39,6 @@ Default output format [None]:
 # Cloning the SecureX HaveYouBeenPwned Repo
 ```
 git clone https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned.git
-
 cd tr-05-serverless-have-i-been-pwned.git
 virtualenv venv
 pip install -U -r requirements.txt
