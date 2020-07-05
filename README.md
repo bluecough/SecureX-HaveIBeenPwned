@@ -25,13 +25,13 @@ $ sudo apt install open-vm-tools-desktop
 # Configure AWS CLI on Ubuntu
 - Login in to your AWS console and under IAM retrieve your AWS keys
 - Now in your Ubuntu 20.04 vm
-<pre><code>
-$ aws configure
+```
+aws configure
 AWS Access Key ID [*******************U]: 
 AWS Secret Access Key [*******************h]: 
 Default region name [us-east-1]: 
 Default output format [None]: 
-</code></pre>
+```
 
 # Click to play the recording
 [![asciicast](https://asciinema.org/a/VfdtmieAW4UkWTQ2dPcHk31KS.svg)](https://asciinema.org/a/VfdtmieAW4UkWTQ2dPcHk31KS)
@@ -49,7 +49,8 @@ source venv/bin/activate (To leave venv do a $ deactivate)
 mv zappa_settings.json zappa_settings.json.old
 zappa init
 ```
-
+Output of running zappa init
+```
 Zappa is a system for running server-less Python web applications on AWS Lambda and AWS API Gateway.
 This `init` command will help you create and configure your new Zappa deployment.
 Let's get started!
@@ -82,7 +83,7 @@ Okay, here's your zappa_settings.json:
 }
 
 Does this look okay? (default 'y') [y/n]: y
-
+```
 # Now create the JWT token
 
 In order to create the JWT token we need to go back to our Documents/Development directory and clone another repo.
