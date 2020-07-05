@@ -42,9 +42,8 @@ $ git clone https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned.
 
 $ cd tr-05-serverless-have-i-been-pwned.git
 $ virtualenv venv
-$ source venv/bin/activate
+$ source venv/bin/activate (To leave venv do a $ deactivate)
 </code></pre>
-# (To leave venv do a $ deactivate)
 <pre><code>
 $ mv zappa_settings.json zappa_settings.json.old
 $ zappa init
