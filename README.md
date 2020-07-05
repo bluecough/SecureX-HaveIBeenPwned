@@ -91,4 +91,6 @@ $ git clone https://github.com/CiscoSecurity/tr-05-jwt-generator.git
 $ cp tr-05-jwt-generator/jwt_generator.py ./tr-05-serverless-have-i-been-pwned/.
 $ cd tr-05-serverless-have-i-been-pwned/.
 $ python3 jwt-generator.py pwned
+
+- The SECRET_KEY goes into the AWS console Lambda environment variable while the JWT is applied in CTR or SecureX
 </code></pre>
