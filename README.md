@@ -34,6 +34,7 @@ Default region name [us-east-1]:
 Default output format [None]: 
 </code></pre>
 
+# Click to play the recording
 [![asciicast](https://asciinema.org/a/VfdtmieAW4UkWTQ2dPcHk31KS.png)](https://asciinema.org/a/VfdtmieAW4UkWTQ2dPcHk31KS)
 
 # Cloning the HaveYouBeenPwned Repo
