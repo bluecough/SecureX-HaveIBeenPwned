@@ -1,7 +1,7 @@
 Pre-requisites
-* Install Ubuntu 20.04
-* Get a SecureX account and AWS account.
-* Make sure you can login to you AWS account as the root user
+- Install Ubuntu 20.04
+- Get a SecureX account and AWS account.
+- Make sure you can login to you AWS account as the root user
 
 Ubuntu Pre-requisites to install
 $ sudo apt update
