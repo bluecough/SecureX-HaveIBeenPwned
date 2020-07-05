@@ -1,5 +1,5 @@
 # Prerequisites
-I am using an Ubuntu image because its a good middle ground than to write a MacOS and a Windows version.
+I am using an Ubuntu image because its a good middle ground than to write a MacOS and a Windows version. Once you see how this is done you can apply this to the rest of the integrations.
 
 - Install Ubuntu 20.04 Desktop version on your VMWare environment.
 - Get a SecureX account and an AWS account.
