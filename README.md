@@ -3,7 +3,7 @@ I am using an Ubuntu image because its a good middle ground than to write a MacO
 
 - Install Ubuntu 20.04 Desktop version on your VMWare environment.
 - Get a SecureX account and an AWS account.
-- Make sure you can login to you AWS account as the root user
+- Make sure you can login to you AWS account and access your API keys.
 - Purchase Have I been pwned API key for $3.50 USD for 1 month. Make sure you have the API key they provide handy.
 
 # Install Ubuntu Prerequisites
