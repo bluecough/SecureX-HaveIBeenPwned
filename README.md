@@ -25,7 +25,7 @@ $ sudo apt install open-vm-tools-desktop
 Configure AWS CLI on Ubuntu
 # Login in to your AWS console and under IAM retrieve your AWS keys
 
-# Now in your UBUNTU VM
+# Now in your Ubuntu 20.04 vm
 <pre><code>
 $ aws configure
 AWS Access Key ID [*******************U]: 
