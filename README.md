@@ -1,5 +1,7 @@
 # Pre-requisites
-- Install Ubuntu 20.04
+I am using an Ubuntu image because its too hard to write a MacOS and a Windows version
+
+- Install Ubuntu 20.04 
 - Get a SecureX account and AWS account.
 - Make sure you can login to you AWS account as the root user
 
@@ -31,8 +33,6 @@ Default region name [us-east-1]:
 Default output format [None]: 
 </code></pre>
 
-
-
 # Cloning the HaveYouBeenPwned Repo
 <pre><code>
 $ git clone https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned.git
@@ -51,6 +51,31 @@ Let's get started!
 
 
 Your Zappa configuration can support multiple production stages, like 'dev', 'staging', and 'production'.
-What do you want to call this environment (default 'dev'): pwned
-What do you want to call your bucket? (default ‘zappa-sdhjfsdfhks’): <accept the random name>
+What do you want to call this environment (default 'dev'): ##pwned
+What do you want to call your bucket? (default ‘zappa-*******’): ##<accept the random name>
+It looks like this is a Flask application.
+What's the modular path to your app's function?
+This will likely be something like 'your_module.app'.
+We discovered: app.app
+Where is your app's function? (default 'app.app'): 
+
+You can optionally deploy to all available regions in order to provide fast global service.
+If you are using Zappa for the first time, you probably don't want to do this!
+Would you like to deploy this application globally? (default 'n') [y/n/(p)rimary]: n
+
+Okay, here's your zappa_settings.json:
+
+{
+    "pwned2": {
+        "app_function": "app.app",
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "tr-05-serverles",
+        "runtime": "python3.8",
+        "s3_bucket": "zappa-********"
+    }
+}
+
+Does this look okay? (default 'y') [y/n]: y
+
 </code></pre>
