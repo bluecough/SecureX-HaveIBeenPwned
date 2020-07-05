@@ -44,7 +44,7 @@ git clone https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned.gi
 cd tr-05-serverless-have-i-been-pwned.git
 virtualenv venv
 pip install -U -r requirements.txt
-source venv/bin/activate (To leave venv do a $ deactivate)
+source venv/bin/activate (To leave venv type 'deactivate' at the command prompt)
 ```
 Now run zappa by initing it.
 ```
