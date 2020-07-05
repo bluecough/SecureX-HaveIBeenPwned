@@ -34,8 +34,6 @@ Default region name [us-east-1]:
 Default output format [None]: 
 </code></pre>
 
-<script src="https://asciinema.org/a/VfdtmieAW4UkWTQ2dPcHk31KS.png" id="asciicast-VfdtmieAW4UkWTQ2dPcHk31KS" async></script>
-
 [![asciicast](https://asciinema.org/a/VfdtmieAW4UkWTQ2dPcHk31KS.png)](https://asciinema.org/a/VfdtmieAW4UkWTQ2dPcHk31KS)
 
 # Cloning the HaveYouBeenPwned Repo
