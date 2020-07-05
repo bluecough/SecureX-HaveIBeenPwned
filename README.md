@@ -90,11 +90,9 @@ $ git clone https://github.com/CiscoSecurity/tr-05-jwt-generator.git
 $ cp tr-05-jwt-generator/jwt_generator.py ./tr-05-serverless-have-i-been-pwned/.
 $ cd tr-05-serverless-have-i-been-pwned/.
 $ python3 jwt-generator.py pwned
-
-
+</code></pre>
 
 - The SECRET_KEY goes into the AWS console Lambda environment variable while the JWT is applied in CTR or SecureX
 - NOTE: If you see any issues with Zappa or it doesnt upload to AWS Lambda you may need to fix the requirements.txt to have Werkzeug==0.16.1
-</code></pre>
 
 ![Image Lamdba Enviroment Variable](https://github.com/bluecough/SecureX-HaveIBeenPwned/blob/master/img/SECRET_KEY.png)
