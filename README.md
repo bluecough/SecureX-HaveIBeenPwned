@@ -46,7 +46,7 @@ virtualenv venv
 pip install -U -r requirements.txt
 source venv/bin/activate (To leave venv type 'deactivate' at the command prompt)
 ```
-Now run zappa by initing it.
+Now run zappa by initing it. I move the original config to .old, there is an explanation but mainly revolves around unique S3 buckets for the region.
 ```
 mv zappa_settings.json zappa_settings.json.old
 zappa init
