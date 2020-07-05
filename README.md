@@ -60,12 +60,12 @@ Let's get started!
 
 Your Zappa configuration can support multiple production stages, like 'dev', 'staging', and 'production'.
 What do you want to call this environment (default 'dev'): pwned
-What do you want to call your bucket? (default ‘zappa-*******’): <accept the random name>
+What do you want to call your bucket? (default ‘zappa-*******’): <--- accept the random name or enter your own.
 It looks like this is a Flask application.
 What's the modular path to your app's function?
 This will likely be something like 'your_module.app'.
 We discovered: app.app
-Where is your app's function? (default 'app.app'): 
+Where is your app's function? (default 'app.app'): <--- leave it as app.app
 
 You can optionally deploy to all available regions in order to provide fast global service.
 If you are using Zappa for the first time, you probably don't want to do this!
