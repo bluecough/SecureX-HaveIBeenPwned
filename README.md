@@ -7,16 +7,16 @@ I am using an Ubuntu image because its a good middle ground than to write a MacO
 - Purchase Have I been pwned API key for $3.50 USD for 1 month. Make sure you have the API key they provide handy.
 
 # Install Ubuntu Prerequisites
-<pre><code>
-$ sudo apt update
-$ sudo apt install git
-$ sudo apt install python3-pip
-$ sudo apt install virtualenv
-$ sudo pip3 install zappa
-$ echo “PATH=$PATH:~/.local/bin:.” >> ~/.bashrc
-$ mkdir Documents/Development && cd Documents/Development
-$ sudo apt install awscli
-</code></pre>
+```
+sudo apt update
+sudo apt install git
+sudo apt install python3-pip
+sudo apt install virtualenv
+sudo pip3 install zappa
+echo “PATH=$PATH:~/.local/bin:.” >> ~/.bashrc
+mkdir Documents/Development && cd Documents/Development
+sudo apt install awscli
+```
 # Optional: so you can cut and paste between host and guest. Was not working as of writing this readme.
 <pre><code>
 $ sudo apt install open-vm-tools-desktop
