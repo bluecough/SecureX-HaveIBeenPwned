@@ -18,9 +18,9 @@ mkdir Documents/Development && cd Documents/Development
 sudo apt install awscli
 ```
 # Optional: so you can cut and paste between host and guest. Was not working as of writing this readme.
-<pre><code>
-$ sudo apt install open-vm-tools-desktop
-</code></pre>
+```
+sudo apt install open-vm-tools-desktop
+```
 
 # Configure AWS CLI on Ubuntu
 - Login in to your AWS console and under IAM retrieve your AWS keys
