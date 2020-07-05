@@ -43,13 +43,13 @@ git clone https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned.gi
 cd tr-05-serverless-have-i-been-pwned.git
 virtualenv venv
 pip install -U -r requirements.txt
-$ source venv/bin/activate (To leave venv do a $ deactivate)
+source venv/bin/activate (To leave venv do a $ deactivate)
 ```
 ```
 mv zappa_settings.json zappa_settings.json.old
 zappa init
 ```
-<pre><code>
+
 Zappa is a system for running server-less Python web applications on AWS Lambda and AWS API Gateway.
 This `init` command will help you create and configure your new Zappa deployment.
 Let's get started!
@@ -82,7 +82,7 @@ Okay, here's your zappa_settings.json:
 }
 
 Does this look okay? (default 'y') [y/n]: y
-</code></pre>
+
 # Now create the JWT token
 
 In order to create the JWT token we need to go back to our Documents/Development directory and clone another repo.
