@@ -34,6 +34,8 @@ Default region name [us-east-1]:
 Default output format [None]: 
 </code></pre>
 
+https://asciinema.org/a/fqDK9KILyF4YtLmshDsFdGC3g
+
 # Cloning the HaveYouBeenPwned Repo
 <pre><code>
 $ git clone https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned.git
