@@ -68,7 +68,7 @@ Would you like to deploy this application globally? (default 'n') [y/n/(p)rimary
 Okay, here's your zappa_settings.json:
 
 {
-    "pwned2": {
+    "pwned": {
         "app_function": "app.app",
         "aws_region": "us-east-1",
         "profile_name": "default",
