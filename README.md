@@ -17,7 +17,8 @@ echo “PATH=$PATH:~/.local/bin:.” >> ~/.bashrc
 mkdir Documents/Development && cd Documents/Development
 sudo apt install awscli
 ```
-# Optional: so you can cut and paste between host and guest. Was not working as of writing this readme.
+# Optional: so you can cut and paste between host and guest.
+Was not working as of writing this readme. I am thinking VMWare Fusion didn't have VMWare tools for Ubuntu 20.04 yet.
 ```
 sudo apt install open-vm-tools-desktop
 ```
