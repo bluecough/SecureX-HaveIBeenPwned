@@ -1,4 +1,4 @@
-# Pre-requisites
+# Prerequisites
 I am using an Ubuntu image because its too hard to write a MacOS and a Windows version
 
 - Install Ubuntu 20.04 
@@ -6,7 +6,7 @@ I am using an Ubuntu image because its too hard to write a MacOS and a Windows v
 - Make sure you can login to you AWS account as the root user
 - Purchase Have I been pwned API key for $3.50 USD for 1 month
 
-# Ubuntu Pre-requisites to install
+# Ubuntu Prerequisites to install
 <pre><code>
 $ sudo apt update
 $ sudo apt install git
