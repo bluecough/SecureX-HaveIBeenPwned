@@ -81,8 +81,6 @@ Okay, here's your zappa_settings.json:
 }
 
 Does this look okay? (default 'y') [y/n]: y
-
-</code></pre>
 </code></pre>
 # Now create the JWT token
 
