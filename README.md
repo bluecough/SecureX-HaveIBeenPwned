@@ -80,7 +80,9 @@ Okay, here's your zappa_settings.json:
 Does this look okay? (default 'y') [y/n]: y
 
 </code></pre>
+
 # Now create the JWT token
+
 In order to create the JWT token we need to go back to our Documents/Development directory and clone another repo.
 <pre><code>
 $ cd ~/Documents/Development
