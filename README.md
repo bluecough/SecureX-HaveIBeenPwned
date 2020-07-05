@@ -6,7 +6,7 @@ I am using an Ubuntu image because its a good middle ground than to write a MacO
 - Make sure you can login to you AWS account as the root user
 - Purchase Have I been pwned API key for $3.50 USD for 1 month. Make sure you have the API key they provide handy.
 
-# Ubuntu Prerequisites to install
+# Install Ubuntu Prerequisites
 <pre><code>
 $ sudo apt update
 $ sudo apt install git
