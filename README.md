@@ -111,5 +111,13 @@ zappa status
 ```
 ![Image Lamdba Enviroment Variable](https://github.com/bluecough/SecureX-HaveIBeenPwned/blob/master/img/SECRET_KEY.png)
 
+# Commandline testing to see if this all works.
+First install httpie so you can do a HTTP POST to the URL gotten from zappa status
+```
+sudo apt install httpie
+```
+Now perform the following and it should give an output similar to the below.
+```
+http POST 
 
 https://security.cisco.com/
