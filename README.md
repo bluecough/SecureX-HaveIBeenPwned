@@ -34,7 +34,7 @@ Default region name [us-east-1]:
 Default output format [None]: 
 </code></pre>
 
-[![asciicast](https://asciinema.org/a/fqDK9KILyF4YtLmshDsFdGC3g)]
+[![asciicast](https://asciinema.org/a/fqDK9KILyF4YtLmshDsFdGC3g)](https://asciinema.org/a/fqDK9KILyF4YtLmshDsFdGC3g)
 
 # Cloning the HaveYouBeenPwned Repo
 <pre><code>
