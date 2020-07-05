@@ -1,10 +1,10 @@
 # Prerequisites
-I am using an Ubuntu image because its too hard to write a MacOS and a Windows version
+I am using an Ubuntu image because its a good middle ground than to write a MacOS and a Windows version.
 
-- Install Ubuntu 20.04 
-- Get a SecureX account and AWS account.
+- Install Ubuntu 20.04 Desktop version on your VMWare environment.
+- Get a SecureX account and an AWS account.
 - Make sure you can login to you AWS account as the root user
-- Purchase Have I been pwned API key for $3.50 USD for 1 month
+- Purchase Have I been pwned API key for $3.50 USD for 1 month. Make sure you have the API key they provide handy.
 
 # Ubuntu Prerequisites to install
 <pre><code>
