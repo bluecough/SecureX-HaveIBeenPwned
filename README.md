@@ -4,6 +4,7 @@ I am using an Ubuntu image because its too hard to write a MacOS and a Windows v
 - Install Ubuntu 20.04 
 - Get a SecureX account and AWS account.
 - Make sure you can login to you AWS account as the root user
+- Purchase Have I been pwned API key for $3.50 USD for 1 month
 
 # Ubuntu Pre-requisites to install
 <pre><code>
@@ -51,8 +52,8 @@ Let's get started!
 
 
 Your Zappa configuration can support multiple production stages, like 'dev', 'staging', and 'production'.
-What do you want to call this environment (default 'dev'): ##pwned
-What do you want to call your bucket? (default ‘zappa-*******’): ##<accept the random name>
+What do you want to call this environment (default 'dev'): pwned
+What do you want to call your bucket? (default ‘zappa-*******’): <accept the random name>
 It looks like this is a Flask application.
 What's the modular path to your app's function?
 This will likely be something like 'your_module.app'.
@@ -78,4 +79,13 @@ Okay, here's your zappa_settings.json:
 
 Does this look okay? (default 'y') [y/n]: y
 
+</code></pre>
+# Now create the JWT token
+In order to create the JWT token we need to go back to our Documents/Development directory and clone another repo.
+<pre><code>
+$ cd ~/Documents/Development
+$ git clone https://github.com/CiscoSecurity/tr-05-jwt-generator.git
+$ cp tr-05-jwt-generator/jwt_generator.py ./tr-05-serverless-have-i-been-pwned/.
+$ cd tr-05-serverless-have-i-been-pwned/.
+$ python3 jwt-generator.py pwned
 </code></pre>
