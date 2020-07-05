@@ -37,16 +37,19 @@ Default output format [None]:
 [![asciicast](https://asciinema.org/a/VfdtmieAW4UkWTQ2dPcHk31KS.svg)](https://asciinema.org/a/VfdtmieAW4UkWTQ2dPcHk31KS)
 
 # Cloning the SecureX HaveYouBeenPwned Repo
-<pre><code>
-$ git clone https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned.git
+```
+git clone https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned.git
 
-$ cd tr-05-serverless-have-i-been-pwned.git
-$ virtualenv venv
+cd tr-05-serverless-have-i-been-pwned.git
+virtualenv venv
+pip install -U -r requirements.txt
 $ source venv/bin/activate (To leave venv do a $ deactivate)
-</code></pre>
+```
+```
+mv zappa_settings.json zappa_settings.json.old
+zappa init
+```
 <pre><code>
-$ mv zappa_settings.json zappa_settings.json.old
-$ zappa init
 Zappa is a system for running server-less Python web applications on AWS Lambda and AWS API Gateway.
 This `init` command will help you create and configure your new Zappa deployment.
 Let's get started!
@@ -93,7 +96,7 @@ $ python3 jwt-generator.py pwned
 </code></pre>
 
 - The SECRET_KEY goes into the AWS console Lambda environment variable while the JWT is applied in CTR or SecureX
-- NOTE: If you see any issues with Zappa or it doesnt upload to AWS Lambda you may need to fix the requirements.txt to have Werkzeug==0.16.1
+- NOTE: If you see any issues with Zappa or it doesnt upload to AWS Lambda you may need to fix the requirements.txt to have Werkzeug==0.16.1 : Then of course rerun the pip install -U -r requirements.txt
 
 ![Image Lamdba Enviroment Variable](https://github.com/bluecough/SecureX-HaveIBeenPwned/blob/master/img/SECRET_KEY.png)
 
