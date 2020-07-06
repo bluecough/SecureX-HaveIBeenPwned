@@ -81,7 +81,7 @@ Does this look okay? (default 'y') [y/n]: y
 ```
 # Another video
 
-[![asciicast](https://asciinema.org/a/kH868d1sMotXOkv4KN7T6xLSH.svg)(https://asciinema.org/a/kH868d1sMotXOkv4KN7T6xLSH)
+[![asciicast](https://asciinema.org/a/kH868d1sMotXOkv4KN7T6xLSH.svg)](https://asciinema.org/a/kH868d1sMotXOkv4KN7T6xLSH)
 
 # Now create the JWT token
 
