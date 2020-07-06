@@ -9,7 +9,7 @@ I am using an Ubuntu image because its a good middle ground than to write a MacO
 # Install Ubuntu Prerequisites
 ```
 sudo apt update
-sudo apt install git python3-pip python3-venv
+sudo apt install git python3-pip python3-venv httpie
 sudo pip3 install zappa
 echo 'PATH=$PATH:~/.local/bin:.' >> ~/.bashrc
 source ~/.bashrc
