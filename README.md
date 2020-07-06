@@ -1,18 +1,16 @@
 # Prerequisites
-I am using an Ubuntu image because its a good middle ground than to write a MacOS and a Windows version. Once you see how this is done you can apply this to the rest of the integrations that are out for SecureX and Cisco Threat Response.
+Originally I was writing this document to build an Ubuntu 20.04 image on a local VMWare. Unfortunately I encountered some issues with deploying to Lambda through Zappa. So now this tutorial will concentrate using AWS EC2 AMI, using the following image 'Amazon Linux 2 AMI (HVM), SSD Volume Type' . Please note I am not including the full AMI image name as thats different for each region.
 
-- Install Ubuntu 20.04 Desktop version on your VMWare environment.
-- Get a SecureX account and an AWS account.
+- Start a running EC2 AWS Linux2 image. Make sure you can SSH to it.
+- Get a SecureX account and make sure you have some products integrated already.
 - Make sure you can login to you AWS account and access your API keys.
 - Purchase Have I been pwned API key for $3.50 USD for 1 month. Make sure you have the API key they provide handy.
 
 # Install Ubuntu Prerequisites
 ```
-sudo apt update
-sudo apt install git python3-pip virtualenv software-properties-common make gcc zlib1g-dev libffi-dev
+sudo yum update
+sudo yum install git python3-pip virtualenv
 sudo pip3 install zappa
-echo 'PATH=$PATH:~/.local/bin:.' >> ~/.bashrc
-source ~/.bashrc
 mkdir Documents/Development && cd Documents/Development
 sudo apt install awscli
 ```
@@ -29,7 +27,7 @@ Default output format [None]:
 ```
 
 # Click to play the recording
-[![asciicast](https://asciinema.org/a/cy7jp08ArR3Fno84tXHH4rh42.svg)](https://asciinema.org/a/cy7jp08ArR3Fno84tXHH4rh42)
+[![asciicast](https://asciinema.org/a/qpTpT0EUs54fNWRhETXkBWRpx.svg)](https://asciinema.org/a/qpTpT0EUs54fNWRhETXkBWRpx)
 
 # Cloning the SecureX HaveYouBeenPwned Repo
 Clone the repo then going into that directory and creating a virtual environment for your python packages that you need for this repo.
@@ -81,6 +79,10 @@ Okay, here's your zappa_settings.json:
 
 Does this look okay? (default 'y') [y/n]: y
 ```
+# Another video
+
+[![asciicast](https://asciinema.org/a/kH868d1sMotXOkv4KN7T6xLSH.svg)(https://asciinema.org/a/kH868d1sMotXOkv4KN7T6xLSH)
+
 # Now create the JWT token
 
 In order to create the JWT token we need to go back to our Documents/Development directory and clone another repo.
