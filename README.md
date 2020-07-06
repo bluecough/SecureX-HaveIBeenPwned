@@ -10,10 +10,6 @@ http://releases.ubuntu.com/19.10/?_ga=2.152137329.992514204.1593955712-194032906
 # Install Ubuntu Prerequisites
 ```
 sudo apt update
-sudo apt install software-properties-common
-sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt update
-sudo apt install python3.7
 sudo apt install git
 sudo apt install python3-pip
 sudo apt install virtualenv
