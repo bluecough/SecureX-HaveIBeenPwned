@@ -42,7 +42,7 @@ Clone the repo then going into that directory and creating a virtual environment
 ```
 git clone https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned.git
 cd tr-05-serverless-have-i-been-pwned
-python3 -m venv venv
+virtualenv venv
 source venv/bin/activate (To leave venv type 'deactivate' at the command prompt)
 pip install -U -r requirements.txt
 ```
