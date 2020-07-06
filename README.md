@@ -22,7 +22,7 @@ sudo apt install awscli
 
 # Configure AWS CLI on Ubuntu
 - Login in to your AWS console and under IAM retrieve your AWS keys
-- Now in your Ubuntu 20.04 vm
+- Now in your Ubuntu 19.10 vm
 ```
 aws configure
 AWS Access Key ID [*******************U]: 
@@ -38,7 +38,7 @@ Default output format [None]:
 Clone the repo then going into that directory and creating a virtual environment for your python packages that you need for this repo.
 ```
 git clone https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned.git
-cd tr-05-serverless-have-i-been-pwned.git
+cd tr-05-serverless-have-i-been-pwned
 virtualenv venv
 pip install -U -r requirements.txt
 source venv/bin/activate (To leave venv type 'deactivate' at the command prompt)
