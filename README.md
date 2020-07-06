@@ -39,7 +39,7 @@ Default output format [None]:
 ![Image AWS Creds](https://github.com/bluecough/SecureX-HaveIBeenPwned/blob/master/img/aws_credentials.png)
 
 
-# Cloning the SecureX HaveYouBeenPwned Repo
+# Cloning the SecureX HaveIBeenPwned Repo
 Clone the repo then going into that directory and creating a virtual environment for your python packages that you need for this repo.
 ```
 git clone https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned.git
