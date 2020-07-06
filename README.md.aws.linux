@@ -3,24 +3,18 @@ I am using an Ubuntu image because its a good middle ground than to write a MacO
 
 - Install Ubuntu 20.04 Desktop version on your VMWare environment.
 - Get a SecureX account and an AWS account.
-- Make sure you can login to you AWS account as the root user
+- Make sure you can login to you AWS account and access your API keys.
 - Purchase Have I been pwned API key for $3.50 USD for 1 month. Make sure you have the API key they provide handy.
 
 # Install Ubuntu Prerequisites
 ```
 sudo apt update
-sudo apt install git
-sudo apt install python3-pip
-sudo apt install virtualenv
+sudo apt install git python3-pip virtualenv software-properties-common make gcc zlib1g-dev libffi-dev
 sudo pip3 install zappa
-echo “PATH=$PATH:~/.local/bin:.” >> ~/.bashrc
+echo 'PATH=$PATH:~/.local/bin:.' >> ~/.bashrc
+source ~/.bashrc
 mkdir Documents/Development && cd Documents/Development
 sudo apt install awscli
-```
-# Optional: so you can cut and paste between host and guest.
-Was not working as of writing this readme. I am thinking VMWare Fusion didn't have VMWare tools for Ubuntu 20.04 yet.
-```
-sudo apt install open-vm-tools-desktop
 ```
 
 # Configure AWS CLI on Ubuntu
@@ -35,18 +29,19 @@ Default output format [None]:
 ```
 
 # Click to play the recording
-[![asciicast](https://asciinema.org/a/VfdtmieAW4UkWTQ2dPcHk31KS.svg)](https://asciinema.org/a/VfdtmieAW4UkWTQ2dPcHk31KS)
+[![asciicast](https://asciinema.org/a/cy7jp08ArR3Fno84tXHH4rh42.svg)](https://asciinema.org/a/cy7jp08ArR3Fno84tXHH4rh42)
 
 # Cloning the SecureX HaveYouBeenPwned Repo
 Clone the repo then going into that directory and creating a virtual environment for your python packages that you need for this repo.
 ```
 git clone https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned.git
-cd tr-05-serverless-have-i-been-pwned.git
+cd tr-05-serverless-have-i-been-pwned
 virtualenv venv
+source venv/bin/activate (To leave venv type 'deactivate' at the command prompt)
+echo 'Werkzeug==0.16.1' >> requirements.txt
 pip install -U -r requirements.txt
-source venv/bin/activate (To leave venv do a $ deactivate)
 ```
-Now run zappa by initing it.
+Now run zappa by initing it. I move the original config to .old, there is an explanation but mainly revolves around unique S3 buckets for the region.
 ```
 mv zappa_settings.json zappa_settings.json.old
 zappa init
@@ -79,7 +74,7 @@ Okay, here's your zappa_settings.json:
         "aws_region": "us-east-1",
         "profile_name": "default",
         "project_name": "tr-05-serverles",
-        "runtime": "python3.8",
+        "runtime": "python3.7",
         "s3_bucket": "zappa-********"
     }
 }
@@ -90,18 +85,34 @@ Does this look okay? (default 'y') [y/n]: y
 
 In order to create the JWT token we need to go back to our Documents/Development directory and clone another repo.
 
-<pre><code>
-$ cd ~/Documents/Development
-$ git clone https://github.com/CiscoSecurity/tr-05-jwt-generator.git
-$ cp tr-05-jwt-generator/jwt_generator.py ./tr-05-serverless-have-i-been-pwned/.
-$ cd tr-05-serverless-have-i-been-pwned/.
-$ python3 jwt-generator.py pwned
-</code></pre>
+```
+cd ~/Documents/Development
+git clone https://github.com/CiscoSecurity/tr-05-jwt-generator.git
+cp tr-05-jwt-generator/jwt_generator.py ./tr-05-serverless-have-i-been-pwned/.
+cd tr-05-serverless-have-i-been-pwned/.
+python3 jwt-generator.py pwned
+```
 
 - The SECRET_KEY goes into the AWS console Lambda environment variable while the JWT is applied in CTR or SecureX
 - NOTE: If you see any issues with Zappa or it doesnt upload to AWS Lambda you may need to fix the requirements.txt to have Werkzeug==0.16.1 : Then of course rerun the pip install -U -r requirements.txt
 
+Enter your API key that you obtained from HaveIBeenPwned (I am using a dummy key as you can see)
+![Image of jwt](https://github.com/bluecough/SecureX-HaveIBeenPwned/blob/master/img/jwtout.png)
+
+# Load all of these into AWS and SecureX/CTR
+This will print out your Lambda URL location which you will need for CTR or SecureX when you add the integration.
+```
+zappa status
+```
 ![Image Lamdba Enviroment Variable](https://github.com/bluecough/SecureX-HaveIBeenPwned/blob/master/img/SECRET_KEY.png)
 
+# Commandline testing to see if this all works.
+First install httpie so you can do a HTTP POST to the URL gotten from zappa status
+```
+sudo apt install httpie
+```
+Now perform the following and it should give an output similar to the below.
+```
+http POST <LAMBDA URL>/health 'Authorization: Bearer <JWT>'
 
 https://security.cisco.com/
