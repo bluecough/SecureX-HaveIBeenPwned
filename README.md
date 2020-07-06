@@ -11,9 +11,20 @@ Originally I was writing this document to build an Ubuntu 20.04 image on a local
 sudo yum update
 sudo yum install git python3-pip virtualenv
 sudo pip3 install zappa
-mkdir Documents/Development && cd Documents/Development
-sudo apt install awscli
+sudo pip3 install pip --upgrade
 ```
+# Cloning the SecureX HaveYouBeenPwned Repo
+Clone the repo then going into that directory and creating a virtual environment for your python packages that you need for this repo.
+```
+git clone https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned.git
+cd tr-05-serverless-have-i-been-pwned
+virtualenv venv
+source venv/bin/activate (To leave venv type 'deactivate' at the command prompt)
+echo 'Werkzeug==0.16.1' >> requirements.txt
+pip install -U -r requirements.txt
+```
+# Click to play the recording
+[![asciicast](https://asciinema.org/a/qpTpT0EUs54fNWRhETXkBWRpx.svg)](https://asciinema.org/a/qpTpT0EUs54fNWRhETXkBWRpx)
 
 # Configure AWS CLI on Ubuntu
 - Login in to your AWS console and under IAM retrieve your AWS keys
@@ -26,19 +37,6 @@ Default region name [us-east-1]:
 Default output format [None]: 
 ```
 
-# Click to play the recording
-[![asciicast](https://asciinema.org/a/qpTpT0EUs54fNWRhETXkBWRpx.svg)](https://asciinema.org/a/qpTpT0EUs54fNWRhETXkBWRpx)
-
-# Cloning the SecureX HaveYouBeenPwned Repo
-Clone the repo then going into that directory and creating a virtual environment for your python packages that you need for this repo.
-```
-git clone https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned.git
-cd tr-05-serverless-have-i-been-pwned
-virtualenv venv
-source venv/bin/activate (To leave venv type 'deactivate' at the command prompt)
-echo 'Werkzeug==0.16.1' >> requirements.txt
-pip install -U -r requirements.txt
-```
 Now run zappa by initing it. I move the original config to .old, there is an explanation but mainly revolves around unique S3 buckets for the region.
 ```
 mv zappa_settings.json zappa_settings.json.old
