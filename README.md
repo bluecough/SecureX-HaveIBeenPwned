@@ -16,6 +16,7 @@ sudo pip3 install pip-tools
 sudo apt install python3-venv
 sudo pip3 install zappa
 echo “PATH=$PATH:~/.local/bin:.” >> ~/.bashrc
+source ~/.bashrc
 mkdir Documents/Development && cd Documents/Development
 sudo apt install awscli
 ```
