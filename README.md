@@ -41,7 +41,7 @@ Default output format [None]:
 ```
 
 # Click to play the recording
-[![asciicast](https://asciinema.org/a/WmMqtva2cIiQek7rjHxKM49S2.svg)](https://asciinema.org/a/WmMqtva2cIiQek7rjHxKM49S2)
+[![asciicast](https://asciinema.org/a/jBcWGy6AlIpY5tEwy6fnbQZCl.svg)](https://asciinema.org/a/jBcWGy6AlIpY5tEwy6fnbQZCl)
 
 # Cloning the SecureX HaveYouBeenPwned Repo
 Clone the repo then going into that directory and creating a virtual environment for your python packages that you need for this repo.
