@@ -11,7 +11,7 @@ I am using an Ubuntu image because its a good middle ground than to write a MacO
 sudo apt update
 sudo apt install git python3-pip virtualenv make gcc zlib1g-dev libffi-dev
 sudo pip3 install zappa
-echo “PATH=$PATH:~/.local/bin:.” >> ~/.bashrc
+echo 'PATH=$PATH:~/.local/bin:.' >> ~/.bashrc
 source ~/.bashrc
 mkdir Documents/Development && cd Documents/Development
 sudo apt install awscli
