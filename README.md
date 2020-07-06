@@ -54,7 +54,7 @@ Now randomize the last couple of characters in the zappa_settings.json this is s
 sed -i 's/zappa-tr-have-i-been-pwned-relay/zappa-tr-have-i-been-pwned-relay-<SOMETHING RANDOM>/g' zappa_settings.json
 zappa deploy dev
 ```
-Output of running zappa init
+Output of running zappa deploy dev
 ```
 Zappa is a system for running server-less Python web applications on AWS Lambda and AWS API Gateway.
 This `init` command will help you create and configure your new Zappa deployment.
