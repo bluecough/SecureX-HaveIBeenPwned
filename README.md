@@ -19,7 +19,7 @@ sudo apt install awscli
 
 # Configure AWS CLI on Ubuntu
 - Login in to your AWS console and under IAM retrieve your AWS keys
-- Now in your Ubuntu 19.10 vm
+- Now in your Ubuntu 20.04 vm
 ```
 aws configure
 AWS Access Key ID [*******************U]: 
