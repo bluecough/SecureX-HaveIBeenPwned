@@ -12,12 +12,25 @@ sudo apt update
 sudo apt install git
 sudo apt install python3-pip
 sudo pip3 install pip-tools
-sudo apt install python3-venv
+sudo apt install virtualenv
+sudo apt install make gcc zlib1g-dev libffi-dev
 sudo pip3 install zappa
 echo “PATH=$PATH:~/.local/bin:.” >> ~/.bashrc
 source ~/.bashrc
 mkdir Documents/Development && cd Documents/Development
 sudo apt install awscli
+```
+
+# Downgrade Python to 3.7.2
+
+```
+wget https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgz
+tar zxvf Python-3.7.2.tgz
+cd Python-3.7.2
+./configure
+make
+sudo make install
+python --version
 ```
 
 # Configure AWS CLI on Ubuntu
@@ -39,9 +52,9 @@ Clone the repo then going into that directory and creating a virtual environment
 ```
 git clone https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned.git
 cd tr-05-serverless-have-i-been-pwned
-python3 -m venv venv
-pip install -U -r requirements.txt
+virtualenv venv
 source venv/bin/activate (To leave venv type 'deactivate' at the command prompt)
+pip install -U -r requirements.txt
 ```
 Now run zappa by initing it. I move the original config to .old, there is an explanation but mainly revolves around unique S3 buckets for the region.
 ```
