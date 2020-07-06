@@ -16,6 +16,8 @@ source ~/.bashrc
 mkdir Documents/Development && cd Documents/Development
 sudo apt install awscli
 ```
+# Follow the following in setting up IAM in AWS
+https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned/blob/develop/aws/HOWTO.md
 
 # Configure AWS CLI on Ubuntu
 - Login in to your AWS console and under IAM retrieve your AWS keys
@@ -30,6 +32,8 @@ Default output format [None]:
 
 # Click to play the recording
 [![asciicast](https://asciinema.org/a/TtkxwEWWducHFJmfklPS6vxqb.svg)](https://asciinema.org/a/TtkxwEWWducHFJmfklPS6vxqb)
+
+
 
 # Cloning the SecureX HaveYouBeenPwned Repo
 Clone the repo then going into that directory and creating a virtual environment for your python packages that you need for this repo.
