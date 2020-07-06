@@ -1,7 +1,8 @@
 # Prerequisites
 I am using an Ubuntu image because its a good middle ground than to write a MacOS and a Windows version. Once you see how this is done you can apply this to the rest of the integrations that are out for SecureX and Cisco Threat Response.
 
-- Install Ubuntu 20.04 Desktop version on your VMWare environment.
+http://releases.ubuntu.com/19.10/?_ga=2.152137329.992514204.1593955712-1940329067.1593955712
+- Install Ubuntu 19.10 Desktop version on your VMWare environment.
 - Get a SecureX account and an AWS account.
 - Make sure you can login to you AWS account and access your API keys.
 - Purchase Have I been pwned API key for $3.50 USD for 1 month. Make sure you have the API key they provide handy.
