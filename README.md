@@ -63,7 +63,7 @@ Let's get started!
 
 Your Zappa configuration can support multiple production stages, like 'dev', 'staging', and 'production'.
 What do you want to call this environment (default 'dev'): 
-What do you want to call your bucket? (default ‘zappa-*******’): <--- accept the random name or enter your own.
+What do you want to call your bucket? (default ‘zappa-tr-have-i-been-pwned-relay-sjdfhsdkhfsdkhf’): <--- Type your own randomness.
 It looks like this is a Flask application.
 What's the modular path to your app's function?
 This will likely be something like 'your_module.app'.
@@ -88,7 +88,7 @@ Okay, here's your zappa_settings.json:
         "project_name": "tr-have-i-been-pwned-relay",
         "role_name": "tr-serverless-relay-ZappaLambdaExecutionRole",
         "runtime": "python3.7",
-        "s3_bucket": "zappa-********"
+        "s3_bucket": "zappa-tr-have-i-been-pwned-relay-sjdfhsdkhfsdkhf"
     }
 }
 
