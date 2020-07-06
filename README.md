@@ -112,6 +112,6 @@ sudo apt install httpie
 ```
 Now perform the following and it should give an output similar to the below.
 ```
-http POST 
+http POST <LAMBDA URL>/health 'Authorization: Bearer <JWT>'
 
 https://security.cisco.com/
