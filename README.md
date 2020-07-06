@@ -12,6 +12,7 @@ http://releases.ubuntu.com/19.10/?_ga=2.152137329.992514204.1593955712-194032906
 sudo apt update
 sudo apt install git
 sudo apt install python3-pip
+sudo pip3 install pip-tools
 sudo apt install virtualenv
 sudo pip3 install zappa
 echo “PATH=$PATH:~/.local/bin:.” >> ~/.bashrc
