@@ -9,6 +9,9 @@ I am using an Ubuntu image because its a good middle ground than to write a MacO
 # Install Ubuntu Prerequisites
 ```
 sudo apt update
+sudo apt install software-properties-common
+sudo apt update
+sudo apt install python3.7
 sudo apt install git
 sudo apt install python3-pip
 sudo apt install virtualenv
