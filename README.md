@@ -44,6 +44,7 @@ git clone https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned.gi
 cd tr-05-serverless-have-i-been-pwned
 virtualenv venv
 source venv/bin/activate (To leave venv type 'deactivate' at the command prompt)
+echo 'Werkzeug==0.16.1' >> requirements.txt
 pip install -U -r requirements.txt
 ```
 Now run zappa by initing it. I move the original config to .old, there is an explanation but mainly revolves around unique S3 buckets for the region.
