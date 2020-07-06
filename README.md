@@ -13,20 +13,11 @@ sudo apt install git python3-pip virtualenv make gcc zlib1g-dev libffi-dev
 sudo pip3 install zappa
 echo 'PATH=$PATH:~/.local/bin:.' >> ~/.bashrc
 source ~/.bashrc
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt-get update
+sudo apt install python3.7
 mkdir Documents/Development && cd Documents/Development
 sudo apt install awscli
-```
-
-# Optional: Downgrade Python to 3.7.2
-I saw Python 3.8 wasn't supported for Zappa so I rolled it back https://github.com/Miserlou/Zappa/issues/1968
-```
-wget https://www.python.org/ftp/python/3.7.5/Python-3.7.5.tgz
-tar zxvf Python-3.7.2.tgz
-cd Python-3.7.2
-./configure
-make
-sudo make install
-python3 --version
 ```
 
 # Configure AWS CLI on Ubuntu
