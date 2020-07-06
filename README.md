@@ -17,6 +17,8 @@ mkdir Documents/Development && cd Documents/Development
 sudo apt install awscli
 ```
 # Follow the following in setting up IAM in AWS
+Do this one time and you can stampout the integrations using this user
+
 https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned/blob/develop/aws/HOWTO.md
 
 
