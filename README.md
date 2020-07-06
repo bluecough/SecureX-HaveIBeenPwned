@@ -17,6 +17,18 @@ mkdir Documents/Development && cd Documents/Development
 sudo apt install awscli
 ```
 
+# Optional: Downgrade Python to 3.7.2
+I saw Python 3.8 wasn't supported for Zappa so I rolled it back https://github.com/Miserlou/Zappa/issues/1968
+```
+wget https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgz
+tar zxvf Python-3.7.2.tgz
+cd Python-3.7.2
+./configure
+make
+sudo make install
+python3 --version
+```
+
 # Configure AWS CLI on Ubuntu
 - Login in to your AWS console and under IAM retrieve your AWS keys
 - Now in your Ubuntu 20.04 vm
