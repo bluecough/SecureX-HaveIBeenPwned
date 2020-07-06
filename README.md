@@ -48,10 +48,11 @@ python -m venv venv
 source venv/bin/activate (To leave venv type 'deactivate' at the command prompt)
 pip install -U -r requirements.txt
 ```
-Now run zappa by initing it. I move the original config to .old, there is an explanation but mainly revolves around unique S3 buckets for the region.
+
+Now randomize the last couple of characters in the zappa_settings.json this is so the S3 bucket can be unique.
 ```
-mv zappa_settings.json zappa_settings.json.old
-zappa init
+sed -i 's/zappa-tr-have-i-been-pwned-relay/zappa-tr-have-i-been-pwned-relay-<SOMETHING RANDOM>/g' zappa_settings.json
+zappa deploy dev
 ```
 Output of running zappa init
 ```
@@ -61,7 +62,7 @@ Let's get started!
 
 
 Your Zappa configuration can support multiple production stages, like 'dev', 'staging', and 'production'.
-What do you want to call this environment (default 'dev'): pwned
+What do you want to call this environment (default 'dev'): 
 What do you want to call your bucket? (default ‘zappa-*******’): <--- accept the random name or enter your own.
 It looks like this is a Flask application.
 What's the modular path to your app's function?
@@ -76,11 +77,16 @@ Would you like to deploy this application globally? (default 'n') [y/n/(p)rimary
 Okay, here's your zappa_settings.json:
 
 {
-    "pwned": {
+    "dev": {
         "app_function": "app.app",
         "aws_region": "us-east-1",
+        "exclude": [".*", "*.json", "*.md", "*.txt"],
+        "keep_warm": false,
+        "log_level": "INFO",
+        "manage_roles": false,
         "profile_name": "serverless",
-        "project_name": "tr-05-serverles",
+        "project_name": "tr-have-i-been-pwned-relay",
+        "role_name": "tr-serverless-relay-ZappaLambdaExecutionRole",
         "runtime": "python3.7",
         "s3_bucket": "zappa-********"
     }
@@ -97,7 +103,7 @@ cd ~/Documents/Development
 git clone https://github.com/CiscoSecurity/tr-05-jwt-generator.git
 cp tr-05-jwt-generator/jwt_generator.py ./tr-05-serverless-have-i-been-pwned/.
 cd tr-05-serverless-have-i-been-pwned/.
-python3 jwt-generator.py pwned
+python3 jwt-generator.py dev
 ```
 
 - The SECRET_KEY goes into the AWS console Lambda environment variable while the JWT is applied in CTR or SecureX
