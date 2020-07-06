@@ -13,7 +13,7 @@ sudo apt update
 sudo apt install git
 sudo apt install python3-pip
 sudo pip3 install pip-tools
-sudo apt install virtualenv
+sudo apt install python3-venv
 sudo pip3 install zappa
 echo “PATH=$PATH:~/.local/bin:.” >> ~/.bashrc
 mkdir Documents/Development && cd Documents/Development
@@ -39,7 +39,7 @@ Clone the repo then going into that directory and creating a virtual environment
 ```
 git clone https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned.git
 cd tr-05-serverless-have-i-been-pwned
-virtualenv venv
+python3 -m venv venv
 pip install -U -r requirements.txt
 source venv/bin/activate (To leave venv type 'deactivate' at the command prompt)
 ```
