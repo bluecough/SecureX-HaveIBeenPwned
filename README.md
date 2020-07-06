@@ -81,7 +81,7 @@ Okay, here's your zappa_settings.json:
     "pwned": {
         "app_function": "app.app",
         "aws_region": "us-east-1",
-        "profile_name": "default",
+        "profile_name": "serverless",
         "project_name": "tr-05-serverles",
         "runtime": "python3.7",
         "s3_bucket": "zappa-********"
