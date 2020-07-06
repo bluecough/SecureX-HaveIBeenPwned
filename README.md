@@ -9,7 +9,7 @@ I am using an Ubuntu image because its a good middle ground than to write a MacO
 # Install Ubuntu Prerequisites
 ```
 sudo apt update
-sudo apt install git python3-pip virtualenv software-properties-common make gcc zlib1g-dev libffi-dev
+sudo apt install git python3-pip
 sudo pip3 install zappa
 echo 'PATH=$PATH:~/.local/bin:.' >> ~/.bashrc
 source ~/.bashrc
@@ -29,7 +29,7 @@ Default output format [None]:
 ```
 
 # Click to play the recording
-[![asciicast](https://asciinema.org/a/cy7jp08ArR3Fno84tXHH4rh42.svg)](https://asciinema.org/a/cy7jp08ArR3Fno84tXHH4rh42)
+[![asciicast](https://asciinema.org/a/TtkxwEWWducHFJmfklPS6vxqb.svg)](https://asciinema.org/a/TtkxwEWWducHFJmfklPS6vxqb)
 
 # Cloning the SecureX HaveYouBeenPwned Repo
 Clone the repo then going into that directory and creating a virtual environment for your python packages that you need for this repo.
