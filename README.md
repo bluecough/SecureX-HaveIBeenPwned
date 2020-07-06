@@ -26,7 +26,7 @@ cd Python-3.7.2
 ./configure
 make
 sudo make install
-python --version
+python3 --version
 ```
 
 # Configure AWS CLI on Ubuntu
@@ -41,7 +41,7 @@ Default output format [None]:
 ```
 
 # Click to play the recording
-[![asciicast](https://asciinema.org/a/VfdtmieAW4UkWTQ2dPcHk31KS.svg)](https://asciinema.org/a/VfdtmieAW4UkWTQ2dPcHk31KS)
+[![asciicast](https://asciinema.org/a/WmMqtva2cIiQek7rjHxKM49S2.svg)](https://asciinema.org/a/WmMqtva2cIiQek7rjHxKM49S2)
 
 # Cloning the SecureX HaveYouBeenPwned Repo
 Clone the repo then going into that directory and creating a virtual environment for your python packages that you need for this repo.
