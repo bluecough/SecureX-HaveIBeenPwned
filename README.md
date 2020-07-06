@@ -10,6 +10,7 @@ I am using an Ubuntu image because its a good middle ground than to write a MacO
 ```
 sudo apt update
 sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
 sudo apt install python3.7
 sudo apt install git
