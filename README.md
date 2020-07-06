@@ -9,13 +9,15 @@ I am using an Ubuntu image because its a good middle ground than to write a MacO
 # Install Ubuntu Prerequisites
 ```
 sudo apt update
-sudo apt install git python3-pip virtualenv make gcc zlib1g-dev libffi-dev
+sudo apt install git python3-pip virtualenv software-properties-common make gcc zlib1g-dev libffi-dev
 sudo pip3 install zappa
 echo 'PATH=$PATH:~/.local/bin:.' >> ~/.bashrc
 source ~/.bashrc
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt-get update
 sudo apt install python3.7
+sudo rm /usr/bin/python3
+ln -s /usr/bin/python3.7 /usr/bin/python3
 mkdir Documents/Development && cd Documents/Development
 sudo apt install awscli
 ```
