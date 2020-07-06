@@ -103,6 +103,8 @@ python3 jwt-generator.py pwned
 - The SECRET_KEY goes into the AWS console Lambda environment variable while the JWT is applied in CTR or SecureX
 - NOTE: If you see any issues with Zappa or it doesnt upload to AWS Lambda you may need to fix the requirements.txt to have Werkzeug==0.16.1 : Then of course rerun the pip install -U -r requirements.txt
 
+[![asciicast](https://asciinema.org/a/Sg4QwE4Y0TMuXCW5les2FHjoE.svg)](https://asciinema.org/a/Sg4QwE4Y0TMuXCW5les2FHjoE)
+
 Enter your API key that you obtained from HaveIBeenPwned (I am using a dummy key as you can see)
 ![Image of jwt](https://github.com/bluecough/SecureX-HaveIBeenPwned/blob/master/img/jwtout.png)
 
