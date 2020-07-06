@@ -9,24 +9,12 @@ I am using an Ubuntu image because its a good middle ground than to write a MacO
 # Install Ubuntu Prerequisites
 ```
 sudo apt update
-sudo apt install git python3-pip virtualenv make gcc zlib1g-dev libffi-dev
+sudo apt install git python3-pip virtualenv
 sudo pip3 install zappa
 echo 'PATH=$PATH:~/.local/bin:.' >> ~/.bashrc
 source ~/.bashrc
 mkdir Documents/Development && cd Documents/Development
 sudo apt install awscli
-```
-
-# Optional: Downgrade Python to 3.7.2
-I saw Python 3.8 wasn't supported for Zappa so I rolled it back https://github.com/Miserlou/Zappa/issues/1968
-```
-wget https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgz
-tar zxvf Python-3.7.2.tgz
-cd Python-3.7.2
-./configure
-make
-sudo make install
-python3 --version
 ```
 
 # Configure AWS CLI on Ubuntu
