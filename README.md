@@ -73,7 +73,7 @@ Okay, here's your zappa_settings.json:
         "aws_region": "us-east-1",
         "profile_name": "default",
         "project_name": "tr-05-serverles",
-        "runtime": "python3.8",
+        "runtime": "python3.7",
         "s3_bucket": "zappa-********"
     }
 }
