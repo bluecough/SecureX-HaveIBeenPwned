@@ -17,7 +17,7 @@ mkdir Documents/Development && cd Documents/Development
 sudo apt install awscli
 ```
 
-# Downgrade Python to 3.7.2
+# Optional: Downgrade Python to 3.7.2
 I saw Python 3.8 wasn't supported for Zappa so I rolled it back https://github.com/Miserlou/Zappa/issues/1968
 ```
 wget https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgz
