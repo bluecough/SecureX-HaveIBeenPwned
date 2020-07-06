@@ -20,7 +20,7 @@ sudo apt install awscli
 # Optional: Downgrade Python to 3.7.2
 I saw Python 3.8 wasn't supported for Zappa so I rolled it back https://github.com/Miserlou/Zappa/issues/1968
 ```
-wget https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgz
+wget https://www.python.org/ftp/python/3.7.5/Python-3.7.5.tgz
 tar zxvf Python-3.7.2.tgz
 cd Python-3.7.2
 ./configure
