@@ -48,7 +48,7 @@ python3 -m venv venv # Note if you use virtualenv to create your virtual environ
 source venv/bin/activate (To leave venv type 'deactivate' at the command prompt)
 pip install -U -r requirements.txt
 ```
-# Optional if you want to run this locally in your datacenter DMZ
+# Optional: If you want to run this locally in your datacenter DMZ
 ```
 Go to the # Now create the JWT token section and create your SECRET_KEY and JWT token
 export SECRET_KEY='<what ever the secret key is>'
