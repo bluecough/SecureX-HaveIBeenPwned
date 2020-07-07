@@ -32,8 +32,6 @@ Do this one time and you can stampout the integrations using this user
 
 https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned/blob/develop/aws/HOWTO.md
 
-
-# Click to play the recording
 [![asciicast](https://asciinema.org/a/TtkxwEWWducHFJmfklPS6vxqb.svg)](https://asciinema.org/a/TtkxwEWWducHFJmfklPS6vxqb)
 
 ![Image AWS Creds](https://github.com/bluecough/SecureX-HaveIBeenPwned/blob/master/img/aws_credentials.png)
