@@ -40,7 +40,7 @@ https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned/blob/develop
 
 
 # Cloning the SecureX HaveIBeenPwned Repo
-Clone the repo then going into that directory and creating a virtual environment for your python packages that you need for this repo.
+Clone the repo then change into that directory. Then create a virtual environment for your python packages that you need for this repo.
 ```
 git clone https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned.git
 cd tr-05-serverless-have-i-been-pwned
@@ -107,8 +107,10 @@ python3 jwt-generator.py dev
 ```
 
 - The SECRET_KEY goes into the AWS console Lambda environment variable while the JWT is applied in CTR or SecureX
-- NOTE: If you want to fix the Werkzeug error you can do so by echo 'Werkzeug==0.16.1' >> requirements.txt
-
+- NOTE: If you want to fix the Werkzeug error you can do so by: 
+```
+echo 'Werkzeug==0.16.1' >> requirements.txt
+```
 [![asciicast](https://asciinema.org/a/Sg4QwE4Y0TMuXCW5les2FHjoE.svg)](https://asciinema.org/a/Sg4QwE4Y0TMuXCW5les2FHjoE)
 
 Enter your API key that you obtained from HaveIBeenPwned (I am using a dummy key as you can see)
