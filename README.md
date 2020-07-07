@@ -17,7 +17,7 @@ mkdir Documents/Development && cd Documents/Development
 sudo apt install awscli
 ```
 # Configure AWS CLI on Ubuntu
-- Login in to your AWS console and under IAM retrieve your AWS keys
+- Login in to your AWS console create a user called serverless and enable API access.
 - Now in your Ubuntu 20.04 vm
 ```
 aws configure
