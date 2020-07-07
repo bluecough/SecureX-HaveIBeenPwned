@@ -48,14 +48,6 @@ python3 -m venv venv # Note if you use virtualenv to create your virtual environ
 source venv/bin/activate (To leave venv type 'deactivate' at the command prompt)
 pip install -U -r requirements.txt
 ```
-# Optional: If you want to run this locally in your datacenter DMZ
-```
-Go to the # Now create the JWT token section and create your SECRET_KEY and JWT token
-export SECRET_KEY='<what ever the secret key is>'
-flask run
-# Go to the commandline testing section at the end.
-# Probably want to daemonize it https://blog.miguelgrinberg.com/post/running-a-flask-application-as-a-service-with-systemd
-```
 
 # Running Zappa to deploy into AWS Lambda
 Now randomize the last couple of characters in the zappa_settings.json this is so the S3 bucket can be unique.
@@ -142,4 +134,14 @@ Now perform the following and it should give an output similar to the below.
 http POST <LAMBDA URL>/health 'Authorization: Bearer <JWT>'
 ```
 ![Image of output](https://github.com/bluecough/SecureX-HaveIBeenPwned/blob/master/img/httpie%20output.png)
+
+# Optional: If you want to run this locally in your datacenter DMZ
+```
+Go to the # Now create the JWT token section and create your SECRET_KEY and JWT token
+export SECRET_KEY='<what ever the secret key is>'
+flask run
+# Go to the commandline testing section at the end.
+# Probably want to daemonize it https://blog.miguelgrinberg.com/post/running-a-flask-application-as-a-service-with-systemd
+```
+
 https://security.cisco.com/
