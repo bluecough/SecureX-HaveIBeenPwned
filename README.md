@@ -130,4 +130,5 @@ Now perform the following and it should give an output similar to the below.
 ```
 http POST <LAMBDA URL>/health 'Authorization: Bearer <JWT>'
 ```
+![Image of output](https://github.com/bluecough/SecureX-HaveIBeenPwned/blob/master/img/httpie%20output.png)
 https://security.cisco.com/
