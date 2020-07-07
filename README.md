@@ -16,12 +16,6 @@ source ~/.bashrc
 mkdir Documents/Development && cd Documents/Development
 sudo apt install awscli
 ```
-# Follow the following in setting up IAM in AWS
-Do this one time and you can stampout the integrations using this user
-
-https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned/blob/develop/aws/HOWTO.md
-
-
 # Configure AWS CLI on Ubuntu
 - Login in to your AWS console and under IAM retrieve your AWS keys
 - Now in your Ubuntu 20.04 vm
@@ -32,6 +26,12 @@ AWS Secret Access Key [*******************h]:
 Default region name [us-east-1]: 
 Default output format [None]: 
 ```
+
+# Follow the following in setting up IAM in AWS
+Do this one time and you can stampout the integrations using this user
+
+https://github.com/CiscoSecurity/tr-05-serverless-have-i-been-pwned/blob/develop/aws/HOWTO.md
+
 
 # Click to play the recording
 [![asciicast](https://asciinema.org/a/TtkxwEWWducHFJmfklPS6vxqb.svg)](https://asciinema.org/a/TtkxwEWWducHFJmfklPS6vxqb)
